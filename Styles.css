@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+h1{
+    margin: 3%;
+    font-size: 80px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+th, td{
+    text-align: center;
+}
+.table{
+    width: 90%;
+}
+.table, .section-table table{
+    margin: 0 auto;
+}
+.main-table th{
+    font-size: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+.main-table td{
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+}
+.hover-table td{
+    font-size: 22px;
+    padding: 10px 20px;
+    border: 2px solid black;
+}
+.hover-table th{
+    background-color: black;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.main-header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+#btn:hover{
+    background-color: mediumseagreen;
+}
+.section{
+    height: 50vh;
+}
+.section-height{
+    height: auto;
+}
+/* Footer */
+footer{
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #222;
+    height: 50px;
+    position: static;
+    bottom: 0;
+}
+
+@media screen and (max-width:894px) {
+    h2{
+        font-size: 30px;
+    }
+    .main-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-header h1{
+        font-size: 50px;
+    }
+    .main-header h3{
+        font-size: 20px;
+    }
+    #btn{
+        font-size: 20px;
+    }
+    .main-table th{
+        font-size: 20px;
+    }
+    .main-table td{
+        font-size: 28px;
+    }
+    .hover-table th{
+        font-size: 16px;
+        padding: 2px;
+    }
+    .hover-table td{
+        font-size: 16px;
+        padding: 2px;
+    }
+}
