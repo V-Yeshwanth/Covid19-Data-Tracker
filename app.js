@@ -1,5 +1,9 @@
-var tableData = document.getElementById('data');
 var sectionData = document.getElementById('section-data');
+
+var gnewconfirmed = document.getElementById('newconfirmed');
+var gnewdeaths = document.getElementById('newdeaths');
+var gnewrecovered = document.getElementById('newrecovered');
+
 
 function fetchData(){
     var section = document.getElementById('section');
@@ -49,11 +53,10 @@ function fetchData(){
                 divContainer.innerHTML = " ";
                 divContainer.appendChild(table);
 
-                tableData.innerHTML = `
-                        <td>${response.Global.NewConfirmed}</td>
-                        <td>${response.Global.NewDeaths}</td>
-                        <td>${response.Global.NewRecovered}</td>
-                    `;
+                gnewconfirmed.innerHTML =  `${response.Global.NewConfirmed}`;
+                gnewdeaths.innerHTML =  `${response.Global.NewDeaths}`;
+                gnewrecovered.innerHTML =  `${response.Global.NewRecovered}`;
+
 
             } else {
                 console.log("Call Failed");
